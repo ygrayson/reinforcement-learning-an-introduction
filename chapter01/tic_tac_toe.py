@@ -8,6 +8,8 @@
 # declaration at the top                                              #
 #######################################################################
 
+# Version: Grayson Yin
+
 import numpy as np
 import pickle
 

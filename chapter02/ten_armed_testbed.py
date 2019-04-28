@@ -23,6 +23,7 @@ class Bandit:
     # @UCB_param: if not None, use UCB algorithm to select action
     # @gradient: if True, use gradient based bandit algorithm
     # @gradient_baseline: if True, use average reward as baseline for gradient based bandit algorithm
+    # 
     def __init__(self, k_arm=10, epsilon=0., initial=0., step_size=0.1, sample_averages=False, UCB_param=None,
                  gradient=False, gradient_baseline=False, true_reward=0.):
         self.k = k_arm
@@ -45,7 +46,7 @@ class Bandit:
         # estimation for each action
         self.q_estimation = np.zeros(self.k) + self.initial
 
-        # # of chosen times for each action
+        # #of chosen times for each action
         self.action_count = np.zeros(self.k)
 
         self.best_action = np.argmax(self.q_true)
@@ -108,13 +109,15 @@ def simulate(runs, time, bandits):
     rewards = rewards.mean(axis=1)
     return best_action_counts, rewards
 
+# figure 2_1
 def figure_2_1():
     plt.violinplot(dataset=np.random.randn(200,10) + np.random.randn(10))
     plt.xlabel("Action")
     plt.ylabel("Reward distribution")
-    plt.savefig('../images/figure_2_1.png')
+    plt.savefig('./images/figure_2_1.png')
     plt.close()
 
+# figure 2_2
 def figure_2_2(runs=2000, time=1000):
     epsilons = [0, 0.1, 0.01]
     bandits = [Bandit(epsilon=eps, sample_averages=True) for eps in epsilons]
@@ -136,24 +139,31 @@ def figure_2_2(runs=2000, time=1000):
     plt.ylabel('% optimal action')
     plt.legend()
 
-    plt.savefig('../images/figure_2_2.png')
+    plt.savefig('./images/figure_2_2.png')
     plt.close()
 
+# figure 2_3
 def figure_2_3(runs=2000, time=1000):
     bandits = []
+
+    bandits.append(Bandit(epsilon=0, initial=10, step_size=0.1))
     bandits.append(Bandit(epsilon=0, initial=5, step_size=0.1))
+    bandits.append(Bandit(epsilon=0, initial=0, step_size=0.1))
     bandits.append(Bandit(epsilon=0.1, initial=0, step_size=0.1))
     best_action_counts, _ = simulate(runs, time, bandits)
 
-    plt.plot(best_action_counts[0], label='epsilon = 0, q = 5')
-    plt.plot(best_action_counts[1], label='epsilon = 0.1, q = 0')
+    plt.plot(best_action_counts[0], label='epsilon = 0, q = 10')
+    plt.plot(best_action_counts[1], label='epsilon = 0, q = 5')
+    plt.plot(best_action_counts[2], label='epsilon = 0, q = 0, pure greedy')
+    plt.plot(best_action_counts[3], label='epsilon = 0.1, q = 0')
     plt.xlabel('Steps')
     plt.ylabel('% optimal action')
     plt.legend()
 
-    plt.savefig('../images/figure_2_3.png')
+    plt.savefig('./images/figure_2_3.png')
     plt.close()
 
+# figure 2_4
 def figure_2_4(runs=2000, time=1000):
     bandits = []
     bandits.append(Bandit(epsilon=0, UCB_param=2, sample_averages=True))
@@ -166,9 +176,10 @@ def figure_2_4(runs=2000, time=1000):
     plt.ylabel('Average reward')
     plt.legend()
 
-    plt.savefig('../images/figure_2_4.png')
+    plt.savefig('./images/figure_2_4.png')
     plt.close()
 
+# figure 2_5
 def figure_2_5(runs=2000, time=1000):
     bandits = []
     bandits.append(Bandit(gradient=True, step_size=0.1, gradient_baseline=True, true_reward=4))
@@ -187,9 +198,10 @@ def figure_2_5(runs=2000, time=1000):
     plt.ylabel('% Optimal action')
     plt.legend()
 
-    plt.savefig('../images/figure_2_5.png')
+    plt.savefig('./images/figure_2_5.png')
     plt.close()
 
+# figure 2_6
 def figure_2_6(runs=2000, time=1000):
     labels = ['epsilon-greedy', 'gradient bandit',
               'UCB', 'optimistic initialization']
@@ -219,7 +231,7 @@ def figure_2_6(runs=2000, time=1000):
     plt.ylabel('Average reward')
     plt.legend()
 
-    plt.savefig('../images/figure_2_6.png')
+    plt.savefig('./images/figure_2_6.png')
     plt.close()
 
 if __name__ == '__main__':
