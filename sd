@@ -1,0 +1,1606 @@
+[33mcommit 0835f990d2b59b4aa9776ac5bbf25ca786b8bcde[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Grayson Yin <ygrayson@umich.edu>
+Date:   Sat Apr 27 22:22:18 2019 -0400
+
+    Chapter 1 and 2 learning (exploraring the code)
+
+[33mcommit 35b2bb7d500edc789920c8e1ff5cd4b0edd2e113[m[33m ([m[1;31mupstream/master[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: e0d510e 1507a26
+Author: Shangtong Zhang <zhangshangtong.cpp@gmail.com>
+Date:   Wed Nov 7 20:25:39 2018 +0000
+
+    Merge pull request #90 from kevindoran/blackjack_fix
+    
+    Fix the Blackjack dynamics to correctly handle receiving an ace while having a usable ace already.
+
+[33mcommit 1507a261ff292e4be3027e24ec0c9193257a58ff[m
+Author: kevin <kevinxdoran@gmail.com>
+Date:   Wed Nov 7 15:31:35 2018 +1300
+
+    Removed temporary changes used while testing blackjack.py.
+
+[33mcommit 38952dfbffdb2b388fad103772cb5fa9e3354f08[m
+Author: kevin <kevinxdoran@gmail.com>
+Date:   Wed Nov 7 15:11:45 2018 +1300
+
+    Handling the edge case where sum = 21, usable_ace = True and a ace is received after a hit.
+    
+    The player/dealer shouldn't go bust in this situation, as both aces can be treated as a 1 bring the sum down to (21+11) - 10 - 10 = 12.
+
+[33mcommit 02ae4df044dd9655289fe70c5b79802992ad3689[m
+Author: kevin <kevinxdoran@gmail.com>
+Date:   Wed Nov 7 15:03:26 2018 +1300
+
+    Fixed a comment typo in blackjack.py.
+
+[33mcommit acdd2aa2cb93cd52d72184a713afc101658b91a4[m
+Author: kevin <kevinxdoran@gmail.com>
+Date:   Wed Nov 7 14:51:33 2018 +1300
+
+    Updated Chapter 5's Blackjack dynamics to correctly handing the situation where the player or dealer receives an ace while already having a usable ace.
+    
+    It is possible that the new sum requires either one or both aces to act as a 1. In the case where only one ace is treated as a 1, the player or dealer still maintains a single usable ace. This was not handled correctly before (0 usable aces would be present after one of the two aces was treated as a 1).
+
+[33mcommit e0d510e68d3fac7fa7d84334c808d18a96e820f5[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Tue Sep 18 07:16:39 2018 +0800
+
+    Update figure 4.3
+
+[33mcommit 9c76d7c1842a7d4c43c086244d009514fe6e26f7[m
+Merge: 542abef 8cb853e
+Author: Shangtong Zhang <zhangshangtong.cpp@gmail.com>
+Date:   Tue Sep 18 07:14:25 2018 +0800
+
+    Merge pull request #88 from barcahead/issue
+    
+    action index should offset by one
+
+[33mcommit 8cb853e7167e7c44e62258b2ef289b42b0169d9d[m
+Author: fengyelei <fengyelei@huawei.com>
+Date:   Mon Sep 17 20:00:02 2018 +0800
+
+    action index should offset by one
+
+[33mcommit 542abef59510af2b014aabb3641cca2c2b5817fa[m
+Merge: 8d5965a 73b81f0
+Author: Shangtong Zhang <zhangshangtong.cpp@gmail.com>
+Date:   Thu Sep 13 21:48:18 2018 -0600
+
+    Merge pull request #87 from LBAWMY/master
+    
+    Some revision suggestions in Maximization_bias's Problem
+
+[33mcommit 73b81f0b1909341c1f5633242c101498b12e84c9[m
+Author: unknown <lbin_sjtu@sjtu.edu.cn>
+Date:   Fri Sep 14 11:29:22 2018 +0800
+
+    Some revision suggestions in Maximization_bias's Problem
+
+[33mcommit 8d5965acd383c28d9e051cc38079ff3574f8c818[m
+Author: Shangtong Zhang <zhangshangtong.cpp@gmail.com>
+Date:   Tue Aug 28 08:52:25 2018 -0600
+
+    Remove redundant comments
+
+[33mcommit a28bbac03303c7fd0f43f777314dbdc5a5894e2b[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sun Aug 26 09:27:13 2018 -0600
+
+    Round to resemble the figure of gambler's problem, thanks @hansweytjens
+
+[33mcommit 6a31686166b793797f995f70ac876454e6458ac0[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sat Aug 11 10:01:29 2018 -0600
+
+    Update test scheme
+
+[33mcommit 88d9d139cb2d4768e511c09ad56b4777128d7ab3[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Fri Aug 10 23:41:46 2018 -0600
+
+    Update README
+
+[33mcommit 91bfc4f9501d76e78eaf0f012c61a92c12888c2d[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Fri Aug 10 23:38:42 2018 -0600
+
+    Update figure links
+
+[33mcommit a9e1524498dfddbb5f8a2ed5832d58c97e768ee1[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Fri Aug 10 23:17:02 2018 -0600
+
+    Update readme
+
+[33mcommit 34a81458a7c9c6cd1da3d1a4b9d2d075f3bdb46a[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Fri Aug 10 22:57:20 2018 -0600
+
+    Update build scheme
+
+[33mcommit 502e5fc3b8fd966147650903f6d6a10bdd929199[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Fri Aug 10 22:51:32 2018 -0600
+
+    Update test scheme
+
+[33mcommit 591dbd88329d34f678741fc8d296b3ef71687c2a[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Fri Aug 10 22:41:34 2018 -0600
+
+    Add figure 13.2
+
+[33mcommit c527f4df9e683b7b323e2fddf674dcbdcbf726f1[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Fri Aug 10 22:19:15 2018 -0600
+
+    Add figures
+
+[33mcommit 3bb8eac39b04248a7e8ca09c0d46f28007b210a0[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Fri Aug 10 16:59:39 2018 -0600
+
+    Refactor short corridor
+
+[33mcommit 15c01bd44236374122bad7d8433baf99c2fd5b80[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Fri Aug 10 16:25:48 2018 -0600
+
+    Refactor figure 13.1
+
+[33mcommit 133043e365c0836bf6f389e325d1cac93b8c80b9[m
+Merge: bad38d9 7b4c2ab
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Fri Aug 10 16:19:24 2018 -0600
+
+    Merge branch 'master' into latest
+
+[33mcommit bad38d93e5908175662505ae3c961504aa5c4be1[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Fri Aug 10 16:13:35 2018 -0600
+
+    Refactor figures 12.10 and 12.11
+
+[33mcommit 097b4da432b20faf062f03b3c615b099574cd304[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Fri Aug 10 16:01:16 2018 -0600
+
+    Refactor figures of random walk in chapter 12
+
+[33mcommit c80739fd4732537a87ddcd35d01c20c976b5b021[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Fri Aug 10 15:43:24 2018 -0600
+
+    Refactor figure 11.7
+
+[33mcommit 2a453eb01b4075dc3ac9caae8e556f89acb8d2bf[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Fri Aug 10 15:42:07 2018 -0600
+
+    Refactor figure 11.6
+
+[33mcommit b89e5c4ab5b472feb1945e0d75c23d924f190658[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Fri Aug 10 15:39:25 2018 -0600
+
+    Refactor 11.2
+
+[33mcommit 5e8d22be3f2df2d2a60f676efd0a3340a357d1e3[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Thu Aug 9 10:56:02 2018 -0600
+
+    Refactor figure 10.5
+
+[33mcommit 7bd1aae264a8e06348ec29c2ae38e0eb65c322f3[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Thu Aug 9 10:07:12 2018 -0600
+
+    Refactor figures 10.3 10.4
+
+[33mcommit 57533f8d285168f4f83585f91498e0ab7c6cf6aa[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Thu Aug 9 09:55:57 2018 -0600
+
+    Refactor figure 10.2
+
+[33mcommit cabb0a36479b465a4eeb27cf092d3ac4b29f3e4a[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Thu Aug 9 08:53:51 2018 -0600
+
+    Add figures
+
+[33mcommit 7411fa111af8eed655c941dfa999daec8ccc4bf5[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Wed Aug 8 22:18:28 2018 -0600
+
+    Refactor figure 10.1
+
+[33mcommit 081fbf51b1a7e87f5807dac994ebd49fb9e4ca8c[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Wed Aug 8 21:41:58 2018 -0600
+
+    Add figures
+
+[33mcommit 10b8aaa89beec0ebc46072e7476318d5900b12c0[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Wed Aug 8 20:56:47 2018 -0600
+
+    Add figures
+
+[33mcommit 48c6bedf52dfef0cffaa24f480da0ece2b5ba792[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Wed Aug 8 20:54:41 2018 -0600
+
+    Refactor figure 9.8
+
+[33mcommit 0fa40988f21786ada90926238644c2dd4b04de64[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Wed Aug 8 20:45:05 2018 -0600
+
+    Refactor figure 9.10
+
+[33mcommit eaa6b1af34f695fc4e94e464f0bac6fe01cb6cbf[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Wed Aug 8 20:39:05 2018 -0600
+
+    Refactor figure 9.5
+
+[33mcommit 2175362a3ce9655a7260ff7cadd88b33661552bb[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Wed Aug 8 20:29:51 2018 -0600
+
+    Refactor figure 9.2
+
+[33mcommit 07c700560670f58ce2e5dfc27831d10ec96137d1[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Wed Aug 8 20:13:53 2018 -0600
+
+    Refactor figure 9.1
+
+[33mcommit d2bd3cf2895a026d6b2fe150c61d4ee1c9a266fc[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Wed Aug 8 20:02:24 2018 -0600
+
+    Tune figure size
+
+[33mcommit c55f60bdbf608afa0513da47d36759e4ccb5da91[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Wed Aug 8 19:57:59 2018 -0600
+
+    Add comments for figure 8.8
+
+[33mcommit 1bf02ae4918ac83c88d39195a39173b9633a9433[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Wed Aug 8 19:43:52 2018 -0600
+
+    Add figure 8.8
+
+[33mcommit 9ac6267ab160d405b66886ec566a53d843d207df[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Wed Aug 8 13:41:41 2018 -0600
+
+    Add figure 8.7
+
+[33mcommit cb7823a7679efc884ae46d5384a896c592ce4f97[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Mon Aug 6 22:11:57 2018 -0600
+
+    Refactor example 8.4
+
+[33mcommit e67a7bc343168447227cdfd0b88ac110672cb085[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Mon Aug 6 21:37:48 2018 -0600
+
+    Refactor figure 8.5
+
+[33mcommit 4bee8cc1bd584d6155e6f6c88f8213fca905efec[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Mon Aug 6 21:29:21 2018 -0600
+
+    Refactor figure 8.4
+
+[33mcommit 541da6c47535620c3298ebeedb2737d810456fde[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Mon Aug 6 20:50:37 2018 -0600
+
+    Refactor figure 8.2
+
+[33mcommit a4fa0d10df1814f39990a20c5b0742c87240eab4[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Mon Aug 6 18:18:26 2018 -0600
+
+    Refactor figure 7.2
+
+[33mcommit bcb7cf037b97f1df43d8f12322e9c73c9393b03f[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Mon Aug 6 17:45:37 2018 -0600
+
+    Refactor figure 6.7
+
+[33mcommit 7e5611ae68a1f2eaccb7226e1c07007fde1d886d[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Mon Aug 6 17:17:17 2018 -0600
+
+    Refactor figure 6.6
+
+[33mcommit bfd8e07dc408075515e9b817364056808d2ca0ab[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Mon Aug 6 17:02:36 2018 -0600
+
+    Refactor figure 6.4
+
+[33mcommit 2a827cc5823038252d932825132d71e48f276c14[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Mon Aug 6 16:34:00 2018 -0600
+
+    Refactor figure 6.3
+
+[33mcommit f00769919d97f2162b9277441e33a128b7f006bd[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Mon Aug 6 16:04:52 2018 -0600
+
+    Refactor figure 6.2
+
+[33mcommit 3b5bc29c10089b28bec3a47c4fef299ee1f11aab[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Mon Aug 6 15:55:13 2018 -0600
+
+    Refactor example 6.2
+
+[33mcommit a60fc1cc3a8f7533ee10d58db5d56447372be906[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Mon Aug 6 15:33:57 2018 -0600
+
+    Update naming convention
+
+[33mcommit 50adc8065c14c06324e435dd109578e12385feec[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Mon Aug 6 15:29:09 2018 -0600
+
+    Add figures
+
+[33mcommit 7c26bbd578ded727ad2981d12375e212a2589415[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Mon Aug 6 15:27:46 2018 -0600
+
+    Refactor figure 5.4
+
+[33mcommit fceeec97e2103bae7dfb3d81f854fc98c86d8f99[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Mon Aug 6 15:22:24 2018 -0600
+
+    Refactor figure 5.3
+
+[33mcommit ef1b40e1baabe403483365a977b0da380d787927[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Mon Aug 6 14:45:35 2018 -0600
+
+    Increase font size
+
+[33mcommit 4574612bbd22fb0b9b109bb3853d09b0c26e0e6e[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Mon Aug 6 14:42:36 2018 -0600
+
+    Refactor figure 5.3
+
+[33mcommit 7ff33b4f3bcaae9b474210577669f18003978815[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Mon Aug 6 12:09:14 2018 -0600
+
+    Refactor figure 5.1
+
+[33mcommit 2da6f2e44d57b8e3f0e6e643960ce126bba30635[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Mon Aug 6 11:17:59 2018 -0600
+
+    Add agg mode
+
+[33mcommit 8a5e428cacb6879b4410b653b9871459316c071f[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Mon Aug 6 11:15:11 2018 -0600
+
+    Refactor gamblers problem
+
+[33mcommit 3ba1bdf473a83b88ee7c2af1096176a53da63863[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Mon Aug 6 11:03:16 2018 -0600
+
+    Refactor car rental
+
+[33mcommit 0e51e32e1b2e5567a4728a9b651fbe4c3e3e3d5e[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Mon Aug 6 10:34:52 2018 -0600
+
+    Update step size
+
+[33mcommit 872a0451ecd29eb66d529c14a6ba0df56b632348[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Mon Aug 6 09:25:48 2018 -0600
+
+    Use decaying step size for bandits
+
+[33mcommit a798d468e194c184359988917930500df177f309[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sun Aug 5 23:06:02 2018 -0600
+
+    Refactor grid world
+
+[33mcommit b579680e3ecf6229aa2c86663a8c2411f68ba38d[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sun Aug 5 22:36:40 2018 -0600
+
+    Fix a bug in UCB
+
+[33mcommit 62a48d29a31440d418c7e486079f6cfd18bf320e[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sun Aug 5 22:26:43 2018 -0600
+
+    Refactor chapter 3
+
+[33mcommit db7205f4bc1e559b3439b213fe80ff4f8f7fda11[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sun Aug 5 19:38:18 2018 -0600
+
+    Update filename convention
+
+[33mcommit c58c122701ef104398ecac03e25119fad949a50f[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sun Aug 5 19:37:00 2018 -0600
+
+    Refactor ten-armed bandits
+
+[33mcommit ff8cc9e75f5ddb1473efff36d3f33c092d98391a[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sun Aug 5 14:54:35 2018 -0600
+
+    Refactor Tic-Tac-Toe
+
+[33mcommit 7b4c2ab0f8b3877a8931fe98268d83cd224e847a[m
+Merge: 4016410 ef00d77
+Author: Shangtong Zhang <zhangshangtong.cpp@gmail.com>
+Date:   Fri Jun 22 20:42:20 2018 -0600
+
+    Merge pull request #76 from sergii-bond/Reinforce
+    
+    Chapter 13, REINFORCE
+
+[33mcommit ef00d77ebe661b7b24d9bbc54eab33232fcd98ad[m
+Author: Sergii Bondariev <sergii@cogniac.co>
+Date:   Fri Jun 22 19:34:05 2018 -0700
+
+    REINFORCE
+
+[33mcommit 4016410de34d343e331aeff626ebb2692c263537[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Tue Jun 12 08:58:31 2018 -0600
+
+    Fix typos
+
+[33mcommit 35edbf698b1e7f13be1294c82a95310d25dfef86[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sat Jun 9 10:06:00 2018 -0600
+
+    Merge async and sync grid world
+
+[33mcommit 62a829c453734ac80fb08cfbd6ddbefceefa0dc4[m
+Merge: 3bc0c87 8d10868
+Author: Shangtong Zhang <zhangshangtong.cpp@gmail.com>
+Date:   Sat Jun 9 09:50:53 2018 -0600
+
+    Merge pull request #75 from JustinNie/master
+    
+    Add in place version of  Chapter 4
+
+[33mcommit 8d108683382f98291ac560cba4c73feaf9602469[m
+Author: justinnie <nh2littlesheep@126.com>
+Date:   Sat Jun 9 23:36:02 2018 +0800
+
+    Add in place version of  Chapter 4
+
+[33mcommit 3bc0c87125e790f377683b8f6b405ef7a4aff2fc[m
+Author: Shangtong Zhang <zhangshangtong.cpp@gmail.com>
+Date:   Thu Jun 7 20:20:16 2018 -0600
+
+    Update README.md
+
+[33mcommit 20c9573dcbf9687196ae99d5c51b3b48b0178e31[m
+Merge: d83709e 6681de8
+Author: Shangtong Zhang <zhangshangtong.cpp@gmail.com>
+Date:   Thu Jun 7 20:19:26 2018 -0600
+
+    Merge pull request #73 from sergii-bond/example13.1
+    
+    add example 13.1
+
+[33mcommit 6681de8c614bec027e61754b20ef831012865a43[m
+Author: Sergii Bondariev <sergii@cogniac.co>
+Date:   Thu Jun 7 15:49:24 2018 -0700
+
+    add example 13.1
+
+[33mcommit d83709e0b36964ade969e6dc3cef15e81a5d5ca6[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Fri May 11 08:36:29 2018 -0600
+
+    Fix a bug of argmax, thanks @MathematicalModels for pointing this out
+
+[33mcommit 9e7233d988ab598f81eba5323d80141b5e4b12f5[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sun Apr 29 09:13:07 2018 -0600
+
+    Fix a bug in BlackJack, thanks @tinglo for pointing this out
+
+[33mcommit fa7215d3f0cb65caee465f75a4b62d6b3fe743e3[m
+Merge: 70927cb d17622b
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Wed Apr 11 09:21:07 2018 -0600
+
+    Merge branch 'master' of github.com:ShangtongZhang/reinforcement-learning-an-introduction
+
+[33mcommit 70927cbb62cd68d913a4f5ce4eace6a506b1a59a[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Wed Apr 11 09:14:26 2018 -0600
+
+    Fix a bug of BlackJack, thanks @shining-spring
+
+[33mcommit d17622b633ae9a6c02187a67dc5ffe7bccf2a5c0[m
+Merge: d030559 1a1ee26
+Author: Shangtong Zhang <zhangshangtong.cpp@gmail.com>
+Date:   Sat Feb 24 09:01:30 2018 -0700
+
+    Merge pull request #65 from cbrom/master
+    
+    Changed the numpy array display of 'Random Policy' and 'Optimal Policy' to pyplot table
+
+[33mcommit 1a1ee26d08d3373da2193f0b56a2559d992c1def[m
+Author: cbrom abody <kb.cbrom@gmail.com>
+Date:   Sat Feb 24 16:11:55 2018 +0300
+
+    changed the array display of 'Random Policy' and 'Optimal Policy' to pyplot table
+
+[33mcommit d030559850fff1dcfafdb8d5deac3a4ba4d2b2ce[m
+Merge: b8c0bfc 53f5114
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Thu Feb 22 09:13:19 2018 -0700
+
+    Merge branch 'master' of github.com:ShangtongZhang/reinforcement-learning-an-introduction
+
+[33mcommit b8c0bfc8ba805679393ece66c098e2b034705412[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Thu Feb 22 09:12:59 2018 -0700
+
+    Use random.choice instead of shuffle
+
+[33mcommit 53f51143af79581804429f9c791884cff052af2c[m
+Merge: 74e8ff5 22ee4b4
+Author: Shangtong Zhang <zhangshangtong.cpp@gmail.com>
+Date:   Fri Jan 5 22:27:34 2018 -0700
+
+    Merge pull request #61 from tegg89/master
+    
+    Minor changes
+
+[33mcommit 22ee4b4d2a37a4b2294792eb19efcbbde497a113[m
+Author: Tegg Sung <tegg89@gmail.com>
+Date:   Thu Jan 4 19:44:13 2018 +0900
+
+    Minor changes
+    
+    Because of the value error of integers to negative integer powers, explicitly mentioned data types of parameters.
+
+[33mcommit 74e8ff501edfbf081be573fb7bdbcb2056de24eb[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Mon Jan 1 16:21:35 2018 -0700
+
+    Fix a bug for MC
+
+[33mcommit d63afe7ff364d4afb398ca77ae27a69ec43f7d3b[m
+Author: huanghua1668 <huahuangsjtu@gmail.com>
+Date:   Mon Jan 1 17:46:30 2018 -0500
+
+    sample all the states in playerTrajectory in MC on policy
+
+[33mcommit 6c9fe5df73bbce2e1f2088977c493ebba1fb91d1[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Thu Dec 21 22:35:30 2017 -0700
+
+    Update README
+
+[33mcommit 33c4e2658bdbfecbd013356b647dc3f97c02d9fd[m
+Merge: 765eb4e 982e132
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Mon Dec 11 09:10:00 2017 -0700
+
+    Merge branch 'master' of github.com:ShangtongZhang/reinforcement-learning-an-introduction
+
+[33mcommit 765eb4e42fd04967974e7cc5d537cb875b62afde[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Mon Dec 11 09:09:04 2017 -0700
+
+    Fix broken link
+
+[33mcommit 982e132e78a7938e41af08844e57cceb0d81122a[m
+Merge: 1d194bb 55fe94e
+Author: Shangtong Zhang <zhangshangtong.cpp@gmail.com>
+Date:   Mon Nov 6 19:49:01 2017 -0700
+
+    Merge pull request #54 from yuhang-lin/master
+    
+    Remove commented code
+
+[33mcommit 55fe94e9c03bed0142d4e7b316badef8b5ed2efd[m
+Author: Yuhang Lin <ylin19@uvm.edu>
+Date:   Mon Nov 6 21:46:01 2017 -0500
+
+    Remove commented code
+    
+    episodeLimit is set to be 500 later
+
+[33mcommit 1d194bbbcb33471153e5fb4145810e6de2f70cfc[m
+Merge: 601dd77 2468b31
+Author: Shangtong Zhang <zhangshangtong.cpp@gmail.com>
+Date:   Mon Nov 6 17:50:49 2017 -0700
+
+    Merge pull request #53 from yuhang-lin/master
+    
+    Make graph and messages more friendly
+
+[33mcommit 2468b317d9305393443a498975fd75944ef4e5ef[m
+Author: Yuhang Lin <ylin19@uvm.edu>
+Date:   Mon Nov 6 19:03:18 2017 -0500
+
+    Add messages for easier understanding of the output
+
+[33mcommit 5b34f24b793fa1d62e348cb8dec34c21dacd24f9[m
+Author: Yuhang Lin <ylin19@uvm.edu>
+Date:   Mon Nov 6 18:04:26 2017 -0500
+
+    Add linestyle for curves of different methods
+    
+    It's unclear if the graph is shown in black and white without using
+    linestyle
+
+[33mcommit 601dd77c41f3fc69ff10e27687bf384e40b5e6fc[m
+Merge: a7ae270 dff8fed
+Author: Shangtong Zhang <zhangshangtong.cpp@gmail.com>
+Date:   Fri Nov 3 21:15:48 2017 -0600
+
+    Merge pull request #52 from yuhang-lin/master
+    
+    Fix not allowing same value in both arrays
+
+[33mcommit a7ae2700eb2e645352127dd37e234db27daef08c[m
+Author: Shangtong Zhang <zhangshangtong.cpp@gmail.com>
+Date:   Fri Nov 3 21:15:19 2017 -0600
+
+    Update .travis.yml
+
+[33mcommit dff8fed9125d55d4cdbece86436a27372107602e[m
+Author: Yuhang Lin <ylin19@uvm.edu>
+Date:   Fri Nov 3 22:50:58 2017 -0400
+
+    Fix not allowing same value in both arrays
+    
+    By using "enumerate", it's possible to have the same value in both
+    arrays.
+
+[33mcommit 3552d25e57159d4684f73ef62bbf9335cd8b4f36[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sat Oct 28 10:09:02 2017 -0600
+
+    Fix potential issue of np.argmax
+
+[33mcommit e1f57ed9a9f19ad04e911ec06fdd7b121ba7fd3b[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sat Oct 28 09:30:29 2017 -0600
+
+    Fix a bug in prioritized dyna, thanks @wumo
+
+[33mcommit f5f43347dacfbbbe01780f0c2786da1a0b717ffe[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Wed Jun 21 20:48:26 2017 -0600
+
+    Update README
+
+[33mcommit 71383d63473017f7672227608e17da9d5ad2d99f[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Wed Jun 21 20:40:44 2017 -0600
+
+    Sync with latest book release
+
+[33mcommit ed4c70d011bf51276cdfb48eb8324bd72d13276a[m
+Merge: 26d6ed5 7a3dba1
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Wed Jun 21 17:28:15 2017 -0600
+
+    Merge branch 'latest'
+
+[33mcommit 26d6ed5488ed69a6f0f2ebda3e8c1112fd5bae79[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Tue Jun 13 20:00:02 2017 -0600
+
+    Update README
+
+[33mcommit 8ee88dcd0274bc0517a070f7d88e0f50b9f23952[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Tue Jun 13 19:53:38 2017 -0600
+
+    Remove utils folder
+
+[33mcommit d3bfa8dfe9d50b09e652193196166aba4f1b96c9[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sat Jun 3 13:49:23 2017 -0600
+
+    Update Readme
+
+[33mcommit 7a3dba1384edd9c9c853f43fc2e84bc9e8f5e0e1[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sat Jun 3 13:49:23 2017 -0600
+
+    Update Readme
+
+[33mcommit 2b2badc35d5401d6ba1ad7fb3294dc57ffa1b170[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Thu May 25 21:54:58 2017 -0600
+
+    Fix a bug of expected ETD
+
+[33mcommit 4762f7f10a24da2858f162f2ae18a6ae4ff3962e[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Tue May 2 12:48:09 2017 -0600
+
+    Figure 12.10
+
+[33mcommit 290f9d88abbac4257619ab1b130e00fa04dbf737[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Mon May 1 23:01:40 2017 -0600
+
+    Figure 12.9
+
+[33mcommit 9ce9588b74d236fdac5bf7f16279f772de131697[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sun Apr 30 13:56:45 2017 -0600
+
+    Update comments
+
+[33mcommit b56f074cff4b33c19d509499d47eca1b1b7e28c2[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sun Apr 30 13:53:19 2017 -0600
+
+    Adjust reward for tie to strengthen AI player 2, thanks @shengchun for this trick
+
+[33mcommit c36fc58992829969fe24c9a2ddacfc6d70439ea5[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sun Apr 30 13:48:39 2017 -0600
+
+    Emphatic TD
+
+[33mcommit 40e57680cea23da1a6a970b1480d5909c72389be[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Tue Apr 25 22:16:18 2017 -0600
+
+    TDC and expected TDC
+
+[33mcommit 32a282382762006cebaa928e6da48587fdde28a2[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Tue Apr 25 13:35:17 2017 -0600
+
+    Figure 11.2 Baird's counterexample
+
+[33mcommit eda00af43bb18e8f90a14ea263d382829020cfbb[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sun Mar 26 10:58:14 2017 -0600
+
+    Remove extra spaces
+
+[33mcommit 9ebd4b4c3c9352dbe3eecb1383e69a217a6159ef[m
+Merge: 2130b74 00dacb2
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sun Mar 26 10:57:36 2017 -0600
+
+    Merge branch 'ndvanforeest-docline'
+
+[33mcommit 00dacb2478449bfba2ca863ebc0d5dba6973a80e[m
+Author: Nicky van Foreest <vanforeest@gmail.com>
+Date:   Sun Mar 26 17:55:29 2017 +0200
+
+    name added
+
+[33mcommit b4057028ccd7461eaf37d1f541e7e6d23c458d3d[m
+Author: Nicky van Foreest <vanforeest@gmail.com>
+Date:   Sun Mar 26 10:28:40 2017 +0200
+
+    divide by one
+
+[33mcommit 2130b74219c2599bfa08664c6f4a6fbb24dbf8f2[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sat Mar 25 17:00:19 2017 -0600
+
+    Update readme file
+
+[33mcommit 01c9e9db7d81811f1482cbb06b396c4b31ef8e94[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sat Mar 25 16:45:30 2017 -0600
+
+    Fix a bug of MonteCarloES, thanks @ndvanforeest for pointing this out
+
+[33mcommit 83aa722900f398ef900bfb569585ff93e117011e[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Fri Mar 24 13:09:43 2017 -0600
+
+    Add contributor for python3 support
+
+[33mcommit f6410bbb88f8cdd1afcf766bb06c1a12fdd01130[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Tue Mar 21 21:42:10 2017 -0600
+
+    Fix a bug
+
+[33mcommit 10c00070a52960899c2487f577693c5d2bbb180e[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Fri Mar 10 09:10:55 2017 -0700
+
+    apply discount correctly
+
+[33mcommit 9b26c03e2f4593492b9a20c64cadd23f23a6e93c[m
+Merge: 1b5f07e bd5f835
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Tue Mar 7 21:31:27 2017 -0700
+
+    Merge branch 'loopinvariant4-master'
+
+[33mcommit bd5f8359463f2e36cb203532aa96a17fdb135122[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Tue Mar 7 21:31:10 2017 -0700
+
+    add contributor
+
+[33mcommit 16f766091c0ff2c8e4f3ea838dfd15a64a0c6e49[m
+Author: aja <aja004@gmail.com>
+Date:   Wed Mar 8 12:22:54 2017 +0800
+
+    Set the boolean improvePolicy to false after each policy Improvement run to ensure the next cycle of policy evaluation runs to convergence
+
+[33mcommit 1b5f07e3c7d9d6d05284e9f0ca323632f47879b6[m
+Merge: 03cbc1b f4d5857
+Author: Shangtong Zhang <zhangshangtong.cpp@gmail.com>
+Date:   Sun Feb 5 18:48:54 2017 -0700
+
+    Merge pull request #25 from kentan/typo
+    
+    Fixed typo.
+
+[33mcommit f4d58579997b2f04b56eb2aafec5d4fd5c495d0f[m
+Author: kentan <hyperkentakun@gmail.com>
+Date:   Sun Feb 5 17:14:04 2017 -0700
+
+    Fixed typo.
+
+[33mcommit 03cbc1bcba5170136a7607076b5b18598ff3a8c6[m
+Merge: ccc575e dff391f
+Author: Shangtong Zhang <zhangshangtong.cpp@gmail.com>
+Date:   Tue Jan 24 18:44:09 2017 -0700
+
+    Merge pull request #23 from gwding/ch6_true_false
+    
+    update states when batch is False
+
+[33mcommit dff391ff24e9034d008dfd49b6c05241c393e4b3[m
+Author: Weiguang Gavin Ding <gavin.w.ding@gmail.com>
+Date:   Tue Jan 24 15:45:46 2017 -0700
+
+    True --> False
+
+[33mcommit ccc575e8ed93047d3059290b1d3f67c5c8070063[m
+Merge: 79dfa43 14648df
+Author: Shangtong Zhang <zhangshangtong.cpp@gmail.com>
+Date:   Tue Jan 17 09:23:37 2017 -0700
+
+    Merge pull request #22 from vfdev-5/patch-1
+    
+    Typo
+
+[33mcommit 14648df9b323800e9175a14532d091d81ed3c0d1[m
+Author: vfdev <vfdev.5@gmail.com>
+Date:   Tue Jan 17 09:56:46 2017 +0000
+
+    Typo
+
+[33mcommit 79dfa437b1bfd9134e21d01aa381752e465158ac[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Mon Jan 16 22:30:12 2017 -0700
+
+    Add usage section
+
+[33mcommit dc024be199b1ceabd6a9d69178f190ffad617e4f[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sun Jan 15 10:26:08 2017 -0700
+
+    Perform 50 independent runs according to the usual rule of thumb
+
+[33mcommit 7fca430e0d60f7ba243c366a96904f0e31657a64[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sun Jan 15 10:16:15 2017 -0700
+
+    Use 2000 bandits instead of 200 bandits
+
+[33mcommit 895b5230814bca95d5acad816cc79c38599a6471[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Tue Jan 10 19:50:53 2017 -0700
+
+    Set up for Travis.CI
+
+[33mcommit ab7f7f4f4716cbc2a00ab17f60a2d48a7890b1de[m
+Merge: bdc6f19 baaa8a3
+Author: Shangtong Zhang <zhangshangtong.cpp@gmail.com>
+Date:   Tue Jan 10 19:38:26 2017 -0700
+
+    Merge pull request #21 from aoboturov/master
+    
+    Set up the Travis.CI integration environment and packaging.
+
+[33mcommit baaa8a3238b04f19d7d89ac2d640d59355014a55[m
+Author: aoboturov <oboturov@gmail.com>
+Date:   Tue Jan 10 16:39:35 2017 +0100
+
+    Set up the Travis.CI integration environment and packaging.
+
+[33mcommit bdc6f198acd456e07b1eee5a70510a0b9207e163[m
+Author: Shangtong Zhang <zhangshangtong.cpp@gmail.com>
+Date:   Tue Jan 10 11:04:01 2017 -0700
+
+    Create LICENSE
+
+[33mcommit d03e5f13753ba925a6241469dc81c81e5699b435[m
+Merge: 629e610 a9bb871
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sat Dec 31 20:25:17 2016 -0700
+
+    Merge branch 'kentan-util'
+
+[33mcommit a9bb871704aed89ea608d65a3754ad3c13ee928f[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sat Dec 31 20:22:37 2016 -0700
+
+    Use np.array instead of built-in list
+
+[33mcommit 629e610148878f66e05413c29db8501a166422f7[m
+Merge: a08799c 9964a25
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sat Dec 31 20:19:02 2016 -0700
+
+    Merge branch 'util' of https://github.com/kentan/reinforcement-learning-an-introduction
+
+[33mcommit 9964a25fd54cc2f2afa0fda0301ceb1c0d358e47[m
+Author: kentan <hyperkentakun@gmail.com>
+Date:   Sat Dec 31 20:11:09 2016 -0700
+
+    Returning list type in case of "False" option.
+
+[33mcommit a08799c9c80d19e9bedbf81187dce7b1f8cb31e9[m
+Merge: a98331a 8998e78
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sat Dec 31 19:38:45 2016 -0700
+
+    Merge branch 'kentan-util'
+
+[33mcommit 8998e78a3c5e0f58d63e27c56064ae9754e96fc1[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sat Dec 31 19:38:12 2016 -0700
+
+    Update contributor list
+
+[33mcommit f4955be304feb9786052469bbe1137758841df3d[m
+Author: kentan <hyperkentakun@gmail.com>
+Date:   Sat Dec 31 18:23:20 2016 -0700
+
+    Improved the performance of argmax.
+    The fix got almost 2 times faster than current one without loosing the feature of "unique" option.
+
+[33mcommit a98331a2382c2061a949e1198fc4722679fffdce[m
+Merge: 300cd98 af10d73
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Fri Dec 30 11:09:25 2016 -0700
+
+    Merge branch 'kentan-pythonV3comp'
+
+[33mcommit af10d733ac959354731106f3ec8179c52cb294a5[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Fri Dec 30 11:07:05 2016 -0700
+
+    Fix issues about python3 compatibility
+
+[33mcommit 18bd1a8b218629f410dd975d76f8b6bec4f56399[m
+Author: kentan <hyperkentakun@gmail.com>
+Date:   Wed Dec 28 18:08:27 2016 -0700
+
+    PythonV3 compatibility for chap2 and chap10.
+
+[33mcommit 454e6d998d8d851d45ad174781d5726ba718e931[m
+Author: kentan <hyperkentakun@gmail.com>
+Date:   Wed Dec 28 02:03:07 2016 -0700
+
+    Modified the codes so that they have python v3 compatibility.
+
+[33mcommit 300cd983d041402b296483d32647e29f680e1cdf[m
+Merge: cadc5e3 38df66a
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Mon Dec 26 09:19:55 2016 -0700
+
+    Merge branch 'kentan-master'
+
+[33mcommit 38df66a69cc712d836f7800d630d5ec0eaab4a72[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Mon Dec 26 09:19:19 2016 -0700
+
+    Update contributor list
+
+[33mcommit 21cfa5dfd00d141aeee019b4c822bf1dea2b12c7[m
+Merge: cadc5e3 91e8ce5
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Mon Dec 26 09:17:10 2016 -0700
+
+    Merge branch 'master' of https://github.com/kentan/reinforcement-learning-an-introduction into kentan-master
+
+[33mcommit cadc5e33996e9d5356c1d6c1cec320fd5172f838[m
+Merge: 73faeae 276be29
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Mon Dec 26 09:14:43 2016 -0700
+
+    Merge branch 'aoboturov-master'
+
+[33mcommit 276be29069188ef6b932177afafe79f28f7a73f5[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Mon Dec 26 09:13:52 2016 -0700
+
+    Update contributor lists
+
+[33mcommit 0582f285ea7bf15cf8a4af8e70f3e773f1883204[m
+Author: aoboturov <oboturov@gmail.com>
+Date:   Mon Dec 26 12:00:53 2016 +0100
+
+    The bandit simulation was extracted to a common function.
+
+[33mcommit 91e8ce5ecb4ae0079b3dc0ed3911d1dd4598e539[m
+Author: kentan <hyperkentakun@gmail.com>
+Date:   Mon Dec 26 02:39:56 2016 -0700
+
+    Performance improvement.
+    The fix should make the code run by roughly 10%.
+
+[33mcommit e881462ddeb46c69f6679c4b01ac257831eda638[m
+Author: aoboturov <oboturov@gmail.com>
+Date:   Mon Dec 26 08:58:36 2016 +0100
+
+    Fix for the step size value for the non-average and non-gradient case.
+
+[33mcommit 73faeae19d6ca5d7b3eac548d7b61b18945a325f[m
+Merge: be5b139 c3ca2ad
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Thu Dec 22 08:44:30 2016 -0700
+
+    Merge branch 'findmyway-master'
+
+[33mcommit c3ca2ade02e8982ba826f268545a7ed692ff436d[m
+Author: Tian Jun <tianjun@tianjun.me>
+Date:   Thu Dec 22 22:47:08 2016 +0800
+
+    add Figure 2.1
+
+[33mcommit be5b139d259b04321d8e5d101e0728a936851f61[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sat Dec 3 20:40:18 2016 -0700
+
+    Update parameters for return-specific importance sampling
+
+[33mcommit cdcace2a56d65fab557580d57ab103d2a2824fde[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Fri Dec 2 10:50:56 2016 -0700
+
+    Comment on exploratory steps
+
+[33mcommit d4cd15b504990c92b0d3149fdaef8fc631eb67f7[m
+Merge: cb6b814 3b4138e
+Author: Shangtong Zhang <zhangshangtong.cpp@gmail.com>
+Date:   Fri Dec 2 10:41:19 2016 -0700
+
+    Merge pull request #11 from findmyway/master
+    
+    Remove redundant reset
+
+[33mcommit 3b4138e509730c530ab19318f4b63f170d32c8ab[m
+Merge: 424ce55 cb6b814
+Author: Tian Jun <tianjun@tianjun.me>
+Date:   Fri Dec 2 17:29:30 2016 +0800
+
+    Merge remote-tracking branch 'upstream/master'
+
+[33mcommit 424ce5555e2e5daa0d63b5d35080b01437722389[m
+Author: Tian Jun <tianjun@tianjun.me>
+Date:   Fri Dec 2 17:27:20 2016 +0800
+
+    remove redundant reset functions
+
+[33mcommit cb6b814ef1b6f56a5dc5f0e96b4f9fb29a68a3cb[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Wed Nov 30 15:53:35 2016 -0700
+
+    Sum of TD errors
+
+[33mcommit ee921a7cf5c215b8565acedef094688b97e17965[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Mon Nov 28 14:21:40 2016 -0700
+
+    Q(sigma) example
+
+[33mcommit 80fea21392db2063341bcfd373403f374bed4848[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Tue Nov 22 09:53:30 2016 -0700
+
+    N-Step Tree Backup
+
+[33mcommit 5740e3c7d24fc90db419f41535414e107912a7d0[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sat Nov 19 23:42:20 2016 -0700
+
+    PDWIS and CPDWIS
+
+[33mcommit e2979dead90861e15e5aa7e5929a6fbc015cd049[m
+Merge: 51dd02c c4dd153
+Author: Shangtong Zhang <zhangshangtong.cpp@gmail.com>
+Date:   Sat Nov 19 20:12:56 2016 -0700
+
+    Merge pull request #6 from kentan/master
+    
+    Just fixed misspelling.
+
+[33mcommit c4dd153a6f59d838d9e946fc11c334f794729907[m
+Author: kentan <hyperkentakun@gmail.com>
+Date:   Sat Nov 19 19:35:54 2016 -0700
+
+    Just fixed misspelling.
+
+[33mcommit 51dd02ca30bc8ca9f7acce250696d46327696f75[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Thu Nov 17 15:34:04 2016 -0700
+
+    Update contributor list
+
+[33mcommit 3eed82062990348863c195841815edb4397d9e21[m
+Merge: a64992c 3661a4a
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Thu Nov 17 10:28:53 2016 -0700
+
+    Merge branch 'datahaki-dhch0101'
+
+[33mcommit 3661a4a574e7722ee23a2c2fa26a10f76b4f64f3[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Thu Nov 17 10:21:22 2016 -0700
+
+    Optimize backward propagation, fix a bug for player in defensive position, thank Jan Hakenberg @datahaki for his suggestions
+
+[33mcommit a3007fc842683af81217cdd1420aaced3ad4c79c[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Thu Nov 17 09:28:03 2016 -0700
+
+    Memorize state status correctly
+
+[33mcommit efc4365de046e638179fab7c729de3aed5258c0d[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Thu Nov 17 09:24:38 2016 -0700
+
+    Revert "Remove unused variable"
+    
+    This reverts commit 754ab0c69fde93b4e803b34ee0da46b267c352b0.
+
+[33mcommit 754ab0c69fde93b4e803b34ee0da46b267c352b0[m
+Author: Jan Hakenberg <jan.hakenberg@gmail.com>
+Date:   Thu Nov 17 09:22:33 2016 +0100
+
+    Remove unused variable
+
+[33mcommit a64992ccb8927426a1d48b4d9772ae1436bfef39[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Tue Nov 15 21:28:32 2016 -0700
+
+    Fix a bug
+
+[33mcommit 1d1fc160d08ba83f0ebf33e59abdf49c3e233cbf[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Tue Nov 15 21:10:23 2016 -0700
+
+    Correct some comments
+
+[33mcommit 81e42be63288968b315f0437ff7390d2aa6a8855[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Tue Nov 15 20:50:18 2016 -0700
+
+    Return Specific Importance Sampling
+
+[33mcommit cef9d6ac0304b388a126be228b14e1a4ecee3397[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Mon Nov 14 11:47:56 2016 -0700
+
+    Add todo list
+
+[33mcommit f282d725eef720d309be7ae76e930ef94ee6a163[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Mon Nov 14 10:50:14 2016 -0700
+
+    Monte Carlo with Exploring Starts
+
+[33mcommit bcc98f6fc1cfecacd8dc1b0a1c15b6f061ecbe51[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sun Nov 13 21:40:34 2016 -0700
+
+    A parameter study of the various bandit algorithms
+
+[33mcommit ed1ddb0c40e37a8846665f26f01e0522b232634f[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sun Nov 13 20:00:04 2016 -0700
+
+    True online TD lambda algorithm
+
+[33mcommit 5144257952cbf5f1c3c20091972f5be3d20c708b[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sun Nov 13 18:48:55 2016 -0700
+
+    TD(lambda) algorithm on 19-state random walk
+
+[33mcommit 5b172811bb75459db026844d433982b3039e1589[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sun Nov 13 15:28:10 2016 -0700
+
+    Off-line lambda-return on 19-state random walk
+
+[33mcommit 0dd6624df83303b1b983c8488c4ff45a3eff0403[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sat Nov 12 10:19:54 2016 -0700
+
+    Baird's Counterexample
+
+[33mcommit dbfbae10702738c2bad31e6eb513d5043a50a9fb[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Fri Nov 11 21:04:11 2016 -0700
+
+    Access control queuing task
+
+[33mcommit 5a96ca18ca81900a2118a69b96db6c2069d87a0c[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Fri Nov 11 15:49:25 2016 -0700
+
+    Add a comment about normalization for tile coding
+
+[33mcommit 1cc9c616922372c0df8064eebcae08b7dfac35b1[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Thu Nov 10 21:15:32 2016 -0700
+
+    Refactor folder names for display order
+
+[33mcommit 10640bab3f4347d9fd2ce194a6008fb38a6d4170[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Thu Nov 10 20:34:29 2016 -0700
+
+    Update contents for Mountain Car task
+
+[33mcommit c41ef7dc6ab444ed7d7930abd0edfc1c72c88ebb[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Thu Nov 10 20:18:25 2016 -0700
+
+    Effect of alpha and n on multi-step semi-gradient Sarsa
+
+[33mcommit 9160fee1f66beb5f04b71eaf47fbc4b66f31e28a[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Thu Nov 10 14:09:11 2016 -0700
+
+    One-step vs multi-step semi-gradient Sarsa
+
+[33mcommit 1ba592cd03d52574c54fb5d167f9312e015db9a9[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Thu Nov 10 13:32:00 2016 -0700
+
+    Semi-gradient Sarsa with different alphas
+
+[33mcommit 1ee946aefb21583c5394714a8e080c4fd628e2cb[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Thu Nov 10 11:45:09 2016 -0700
+
+    Mountain car cost-to-go function
+
+[33mcommit 6f4cc61a9c180c2d1cc324a89b1f67b6133aae0a[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sun Nov 6 23:26:37 2016 -0700
+
+    Fourier basis vs polynomials
+
+[33mcommit 1fe4d7172a5997cd1d5c5cfaee42fd32c2a9942a[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sat Nov 5 23:05:12 2016 -0600
+
+    Add sample outputs
+
+[33mcommit a7bfda0a4c304bf98618cca83dac2bd6d40adf3c[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sat Nov 5 22:37:06 2016 -0600
+
+    Add labels for axes of some figures
+
+[33mcommit 3ab6deff3edd3c26e65e4252c622657271e016a3[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sat Nov 5 21:25:46 2016 -0600
+
+    Fix a bug in UCB bandit
+
+[33mcommit a98a07bd36919bff287fbc8253aba7989f5e0e75[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sat Nov 5 16:57:53 2016 -0600
+
+    Single tiling and multiple tilings on the 1000-state random walk task
+
+[33mcommit 52a1b76a6427940589011b8c851b539b05433ff5[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Thu Nov 3 23:03:21 2016 -0600
+
+    Approximation for square-wave function
+
+[33mcommit 9199583388485e4815e9645282182c47d502bb4a[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Tue Nov 1 21:29:29 2016 -0600
+
+    Semi-gradient n-steps TD on the 1000-state random walk
+
+[33mcommit fe19eb95cb7d0942a824adae03ad26ff7529821e[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Tue Nov 1 19:44:12 2016 -0600
+
+    Update contents
+
+[33mcommit bb66937dca21ab651763dcbee669f2c7e4ed43cf[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Tue Nov 1 19:42:00 2016 -0600
+
+    Gradient Mento Carlo on the 1000-state random walk
+
+[33mcommit 16530d9bfe0cb3ddf5393009b52178fbd044e95d[m
+Merge: 274fcf7 061f0e4
+Author: Shangtong Zhang <zhangshangtong.cpp@gmail.com>
+Date:   Tue Nov 1 00:06:57 2016 -0600
+
+    Merge pull request #1 from kentan/master
+    
+    Fixed a bug on coping ndarray.
+
+[33mcommit 061f0e4b320ee285517d38cf396c36f4a6557240[m
+Author: kentan <hyperkentakun@gmail.com>
+Date:   Mon Oct 31 23:26:50 2016 -0600
+
+    Fixed a bug on coping ndarray. At current code, just reference was copied
+    and so modifing newStateValue affected stateValue also.
+    
+    As a result, np.sum(np.abs(newStateValue - stateValue)) was always 0 at the
+    2nd time of the loop.
+
+[33mcommit 274fcf74ffc1d8f88167ba573b3e0e99316fb2aa[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Mon Oct 24 19:32:13 2016 -0600
+
+    Set parameters for prioritized sweeping according to the original paper
+
+[33mcommit 2af3beabef659141d4efee39525ba8c07136b787[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sun Oct 23 15:31:04 2016 -0600
+
+    Prioritized Sweeping over large mazes, finish chapter 8
+
+[33mcommit 473114c4d191f6c760dfe1eba0b73d867df365e5[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Thu Oct 20 11:29:06 2016 -0600
+
+    Add a comment
+
+[33mcommit 27e8ae022f294052feda060ba512da76bd7156e0[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Thu Oct 20 11:26:55 2016 -0600
+
+    Shortcut Maze and code refactor
+
+[33mcommit ae063e21ce0728261bba4a4d0f28d2c5dd857e26[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Wed Oct 19 10:57:40 2016 -0600
+
+    Blocking Maze and Dyna-Q+
+
+[33mcommit 547b4e938668ed6441064982b68abee383253f33[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Mon Oct 17 19:17:41 2016 -0600
+
+    Different planning steps for Dyna-Q agent
+
+[33mcommit 37021376464205bc3545356dab0129cda35829eb[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sat Oct 15 14:57:49 2016 -0600
+
+    Update contents
+
+[33mcommit 9af32b2a4ee6fdb044c017b4d759713a374cfadd[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sat Oct 15 14:55:34 2016 -0600
+
+    Steps and alphas for n-step TD, finish chapter 7
+
+[33mcommit 286ae595f36c668e5d261601bcb6391be9ac5db9[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Thu Oct 13 11:25:15 2016 -0600
+
+    Add a comment about how to set alpha
+
+[33mcommit 65bd0b86b7321cde286c40dc4ab439e0fdc8c5a8[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Thu Oct 13 11:06:22 2016 -0600
+
+    Update a fomula for action probability of epsilon-greedy algorithm
+
+[33mcommit ff6aef63b30ca46d6dcf3034166f903fbb110129[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Wed Oct 12 00:42:39 2016 -0600
+
+    Maximization bias example, finish chapter 6
+
+[33mcommit bc107d047de9f144113fef44dbc3af0a7d0bbb25[m
+Merge: 01daf3b 57b9616
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Tue Oct 11 21:04:14 2016 -0600
+
+    Merge branch 'master' of https://github.com/ShangtongZhang/reinforcement-learning-an-introduction
+
+[33mcommit 01daf3b96dcbf180f693ea75932f2cb4f9495797[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Tue Oct 11 21:03:52 2016 -0600
+
+    Correct algorithm for interim performace
+
+[33mcommit 57b9616af0d0898d596202a03133c01d2cc1a826[m
+Author: Shangtong Zhang <zhangshangtong.cpp@gmail.com>
+Date:   Tue Oct 11 20:55:43 2016 -0600
+
+    Add contents
+
+[33mcommit f6d903a7ba864c0cf8e27efb41898c232b5db2dc[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Tue Oct 11 13:17:39 2016 -0600
+
+    Asymptotic and interim performance for different algorithms and step sizes
+
+[33mcommit a9c28e9a3ca8e14c61005fc4cf66f62ecb041e65[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Mon Oct 10 23:21:04 2016 -0600
+
+    Cliff Walking for chapter 6
+
+[33mcommit fc7c8fbe94988c30fd5edddf78a382011e8e4f30[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Mon Oct 10 22:56:56 2016 -0600
+
+    Correct typos
+
+[33mcommit 2c05fa866f0f9a8030452aefa29b6412037a05b3[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Mon Oct 10 11:36:19 2016 -0600
+
+    Windy Grid World for chapter 6
+
+[33mcommit 743bcabdf041ddb422b061541d2c0ce368ba36f4[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sun Oct 9 14:42:11 2016 -0600
+
+    Add batch updating example for random walk in chapter 6
+
+[33mcommit 0fd53c0193cca2d6e80bc90c39b5121a9c414fa0[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sun Oct 9 10:21:34 2016 -0600
+
+    Add random walk example for chapter 6
+
+[33mcommit 31f3f7fc0279571ed2619d90a4e7136f48556f68[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Wed Oct 5 15:08:21 2016 -0600
+
+    Add a comment
+
+[33mcommit 3614d1ad951d0c782d398b46cc76838e43422055[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Wed Oct 5 15:05:05 2016 -0600
+
+    Variance for ordinary importance sampling
+
+[33mcommit d008275876dda7fb1bdf6faa3093cfc2fba67611[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Wed Oct 5 13:44:14 2016 -0600
+
+    Mean squared error between ordinary importance sampling and weighted importance sampling
+
+[33mcommit 7676d9c38c7716736b79b9f3ddbd6f06209fe2cc[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sat Oct 1 22:14:24 2016 -0600
+
+    Add blackjack for chapter 5
+
+[33mcommit eacde556ab9cf50396da1587913fcff23bcccae7[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sat Oct 1 20:43:33 2016 -0600
+
+    Finish chapter 4, add gambler's problem
+
+[33mcommit 124c77e39809c1eaa85eb216c821ff05fe3ece68[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Fri Sep 30 15:58:27 2016 -0600
+
+    Add grid world for chapter4
+
+[33mcommit 94bb98cd00ba0692ed5f45202545529fbd0f437b[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Tue Sep 27 21:24:25 2016 -0600
+
+    Exclude pyc file
+
+[33mcommit 954f092acaf6ccf5b2ccc8a0d98a76030097e967[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Tue Sep 27 21:06:36 2016 -0600
+
+    Add copyright declaration
+
+[33mcommit 0fa7ec9002d26b8467ee940d732b0b29d9b9d1a4[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Tue Sep 27 20:50:13 2016 -0600
+
+    For chapter 4, add car rental problem
+
+[33mcommit dd97dd69af8b4e87f8294d2fadc64878f94b306f[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sat Sep 24 15:10:06 2016 -0600
+
+    Add optimal policy for grid world for figure 3.8
+
+[33mcommit 1f190d5cfe09098e1eeed3b8a8454cf4d34d7c85[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Mon Sep 19 13:29:19 2016 -0600
+
+    Finish chapter 3, grid world
+
+[33mcommit d0bd395a217d1afff92670436a2520aee8f13dd9[m
+Merge: 7939659 6e2c2f1
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sun Sep 18 21:03:51 2016 -0600
+
+    Merge branch 'master' of https://github.com/ShangtongZhang/reinforcement-learning-an-introduction
+
+[33mcommit 7939659e32f3237aac00e4b73efa8ad49e745d18[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sun Sep 18 21:03:22 2016 -0600
+
+    Add comments for tic-tac-toe
+
+[33mcommit 476ac66ea6203f85385ad50e4fdc494db0474675[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sun Sep 18 20:45:24 2016 -0600
+
+    Finish chapter 2, 10-armed testbed
+
+[33mcommit 6e2c2f12140c72bc70dc7e10ce35063eac73b8c8[m
+Author: Shangtong Zhang <zhangshangtong.cpp@gmail.com>
+Date:   Sun Sep 18 14:22:20 2016 -0600
+
+    Create README.md
+
+[33mcommit 11c40a0da573997257a3a003869c5b3dda733e91[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Sun Sep 18 14:07:58 2016 -0600
+
+    Tic-Tac-Toe
+
+[33mcommit 8b5f4ee4d0e80d0d90e297249835027abb696461[m
+Author: Shangtong Zhang <zhangshangtong.cpp@icloud.com>
+Date:   Tue Sep 13 10:42:34 2016 -0600
+
+    Initial commit
